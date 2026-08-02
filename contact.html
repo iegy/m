@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل معايا — محمد حسين</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .field{ margin-bottom: 20px; }
+  .field label{ display:block; font-family: var(--font-mono); font-size:0.8rem; color: var(--ink-soft); margin-bottom:8px; }
+  .field input, .field textarea{
+    width:100%; padding: 13px 14px; border:1px solid rgba(33,30,26,0.18);
+    border-radius: 4px; background: var(--paper); font-family: var(--font-ar); font-size: 0.98rem; color: var(--ink);
+  }
+  .field input:focus, .field textarea:focus{ outline: 2px solid var(--ember); outline-offset: 1px; }
+  .field textarea{ resize: vertical; min-height: 130px; }
+</style>
+</head>
+<body data-page="contact">
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <img src="logo-mark.png" alt="شعار محمد حسين">
+      <span class="brand-name">MOHAMMED<span>.</span>HUSSEIN</span>
+    </a>
+    <nav class="links">
+      <a href="index.html" data-page="home">الرئيسية</a>
+      <a href="about.html" data-page="about">عني</a>
+      <a href="services.html" data-page="services">خدماتي</a>
+      <a href="portfolio.html" data-page="portfolio">أعمالي</a>
+      <a href="contact.html" data-page="contact">تواصل</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary">لنبدأ مشروعك</a>
+    <button class="nav-toggle" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section>
+  <div class="wrap contact-split">
+
+    <div class="reveal">
+      <div class="eyebrow">GET IN TOUCH</div>
+      <h1 style="font-size:clamp(1.9rem,4vw,2.6rem);">خليني أسمع عن مشروعك.</h1>
+      <p style="font-size:1.02rem; margin-top:16px; max-width:420px;">
+        املأ النموذج، أو تواصل مباشرة عن طريق أي وسيلة تحتها. بردّ عادةً خلال يوم عمل واحد.
+      </p>
+
+      <div style="margin-top:34px; display:flex; flex-direction:column; gap:16px;">
+        <a href="mailto:egyup@outlook.com" class="mono" style="font-size:0.95rem;">
+          <span style="color:var(--ember-dark);">email →</span> egyup@outlook.com
+        </a>
+        <a href="https://wa.me/201000220606" target="_blank" rel="noopener" class="mono" style="font-size:0.95rem;">
+          <span style="color:var(--ember-dark);">whatsapp →</span> 01000220606
+        </a>
+        <a href="https://github.com/iegy" target="_blank" rel="noopener" class="mono" style="font-size:0.95rem;">
+          <span style="color:var(--ember-dark);">github →</span> github.com/iegy
+        </a>
+      </div>
+      <p style="margin-top:18px; font-size:0.88rem; color:var(--sand-dark);">
+        ملحوظة: التواصل عن طريق واتساب فقط، من غير مكالمات تليفون مباشرة.
+      </p>
+    </div>
+
+    <form id="contact-form" class="reveal card" style="clip-path:none; border-radius:8px;">
+      <div class="field">
+        <label for="name">الاسم</label>
+        <input id="name" name="name" type="text" placeholder="اسمك الكامل" required>
+      </div>
+      <div class="field">
+        <label for="contact">إيميل أو رقم واتساب</label>
+        <input id="contact" name="contact" type="text" placeholder="أفضل وسيلة نتواصل بيها" required>
+      </div>
+      <div class="field">
+        <label for="message">تفاصيل المشروع</label>
+        <textarea id="message" name="message" placeholder="احكيلي عن فكرتك، والمدة اللي محتاجها..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">إرسال عبر واتساب</button>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>MOHAMMED.HUSSEIN</h3>
+        <p>مطوّر برمجيات ومصمم تجارب رقمية — من الفكرة إلى منتج يعمل.</p>
+      </div>
+      <div>
+        <h3>روابط سريعة</h3>
+        <a href="about.html">عني</a>
+        <a href="services.html">خدماتي</a>
+        <a href="portfolio.html">أعمالي</a>
+        <a href="contact.html">تواصل</a>
+      </div>
+      <div>
+        <h3>تواصل</h3>
+        <a href="mailto:egyup@outlook.com">egyup@outlook.com</a>
+        <a href="https://wa.me/201000220606" target="_blank" rel="noopener">واتساب: 01000220606</a>
+        <a href="https://github.com/iegy" target="_blank" rel="noopener">أعمالي على GitHub</a>
+      </div>
+    </div>
+
+    <div class="social-row">
+      <span class="social-label">&lt;/&gt; تابعني:</span>
+      <a class="social-chip" href="https://www.facebook.com/iegy.net" target="_blank" rel="noopener">--facebook</a>
+      <a class="social-chip" href="https://www.instagram.com/iegyup" target="_blank" rel="noopener">--instagram</a>
+      <a class="social-chip" href="https://youtube.com/@iegy" target="_blank" rel="noopener">--youtube</a>
+      <a class="social-chip" href="https://tiktok.com/@moegyup" target="_blank" rel="noopener">--tiktok</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Mohammed Hussein. جميع الحقوق محفوظة.</span>
+      <span>built with &lt;/&gt; and ink</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
